@@ -7,7 +7,7 @@
 - [Kubernetes]()
 - [Docker]()
 
-### Cloud Run
+## Cloud Run
 
 1. Open [Cloud Run console](https://console.cloud.google.com/run) and select the Project with your Dialogflow Agent
 2. Press on "Create service" and enter the container image URL
@@ -18,23 +18,19 @@
 3. Select deployment platform and region
 4. Choose "Allow unauthenticated invocations" in the "Authentication" section
 5. Press on "Show optional revision settings"
-6. Set the "Container port" to `8090`
-
-   ![](./images/cloudrun/port.png)
-
-8. In the "Environment variables" section, add [desired configuration options](./configuration.md)
+6. In the "Environment variables" section, add [desired configuration options](./configuration.md)
 
    ![](./images/cloudrun/token.png)
 
-9. Press on "Create"
+7. Press on "Create"
 
     ![](./images/cloudrun/overview.png)
 
-10. Visit the given URL to check everything is working
+8. Visit the given URL to check everything is working
 
     ![](./images/cloudrun/check.png)
 
-### App Engine Flexible
+## App Engine Flexible
 
 1. Make sure you have [Google Cloud SDK](https://cloud.google.com/sdk/docs) installed
 2. Create an App Engine application
