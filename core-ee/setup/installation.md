@@ -17,15 +17,14 @@ Simplest, fastest and cheapest way to run Ushaflow Core EE is using [Google Clou
 
    ![](./images/cloudrun/port.png)
 
-8. In the "Environment variables" section, press on "Add variable"
-9. Add `TOKEN` environment variable containing your License Key
+8. In the "Environment variables" section, add [desired configuration options](./configuration.md)
 
    ![](./images/cloudrun/token.png)
 
-10. Press on "Create"
+9. Press on "Create"
 
     ![](./images/cloudrun/overview.png)
 
-11. Visit the provided URL to check everything is working
+10. Visit the given URL to check everything is working
 
     ![](./images/cloudrun/check.png)

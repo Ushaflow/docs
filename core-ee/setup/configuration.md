@@ -32,7 +32,7 @@ Integer between 1 and 65535
 
 ---
 
-### `Token`
+### `TOKEN`
 
 License key token
 
@@ -84,7 +84,7 @@ disabled
 
 ### `WEBHOOKS`
 
-List of URLs to trigger, when Ushaflow Core EE recieves a request
+List of URLs to trigger, when Ushaflow Core EE receives a request
 
 #### Values
 
@@ -100,7 +100,7 @@ disabled
 
 ---
 
-#### `Realtime`
+#### `REALTIME`
 
 Enable Realtime (WebSocket) API
 
@@ -111,3 +111,23 @@ Enable Realtime (WebSocket) API
 #### Default
 
 `false` (disabled)
+
+---
+
+#### `GOOGLE_APPLICATION_CREDENTIALS`
+
+Path to Google Cloud Project Service Account
+
+#### Values
+
+A URI
+
+Example:
+
+`/tmp/service_account.json`
+
+**Note**: the credentials are configured automatically when running inside Google Cloud
+
+#### Default
+
+none
