@@ -56,7 +56,7 @@
    runtime: custom
    env: flex
    env_variables:
-    # your environment variables go here
+     # your environment variables go here
    ```
 
 5. Create a `Dockerfile`
@@ -114,10 +114,10 @@
    apiVersion: v1
    kind: ConfigMap
    metadata:
-    name: ushaflow-core-ee
+     name: ushaflow-core-ee
    data:
-    TOKEN: <your license key>
-    GOOGLE_APPLICATION_CREDENTIALS: /app/service_account.json
+     TOKEN: <your license key>
+     GOOGLE_APPLICATION_CREDENTIALS: /app/service_account.json
    ```
 
 7. Create a `Deployment` contaning the container
