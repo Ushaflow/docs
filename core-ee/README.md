@@ -9,8 +9,8 @@ Ushaflow Core EE is a self-hosted variant of Ushaflow Core product
 
 ## Setup
 
-- [Installation](./setup/installation)
-- [Configuration]()
+- [Installation](./setup/installation.md)
+- [Configuration](./setup/configuration.md)
 
 ## Manual
 
