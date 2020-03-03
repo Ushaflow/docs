@@ -10,23 +10,28 @@
 ## Cloud Run
 
 1. Open [Cloud Run console](https://console.cloud.google.com/run) and select the Project with your Dialogflow Agent
-2. Press on "Create service" and enter the container image URL
-   `gcr.io/ushaflow/core-ee`
+2. Press on "Create service"
+3. Enter following container image URL
+
+   ```
+   gcr.io/ushaflow/core-ee
+   ```
+
+4. Select the deployment platform and region
+5. Choose "Allow unauthenticated invocations" in the "Authentication" section
 
    ![](./images/cloudrun/create.png)
 
-3. Select deployment platform and region
-4. Choose "Allow unauthenticated invocations" in the "Authentication" section
-5. Press on "Show optional revision settings"
-6. In the "Environment variables" section, add [desired configuration options](./configuration.md)
+6. Press on "Show optional revision settings"
+7. In the "Environment variables" section, add [desired configuration options](./configuration.md)
 
    ![](./images/cloudrun/token.png)
 
-7. Press on "Create"
+8. Press on "Create"
 
     ![](./images/cloudrun/overview.png)
 
-8. Visit the given URL to check everything is working
+9. Visit the given URL to check everything is working
 
     ![](./images/cloudrun/check.png)
 
@@ -35,11 +40,15 @@
 1. Make sure you have [Google Cloud SDK](https://cloud.google.com/sdk/docs) installed
 2. Create an App Engine application
 
-   `gcloud app create`
+   ```
+   gcloud app create
+   ```
 
 3. Make and enter a new directory for your App Engine application
 
-   `mkdir core-ee && cd core-ee`
+   ```
+   mkdir core-ee && cd core-ee
+   ```
 
 4. Create `app.yaml` and add [desired configuration options](./configuration.md) to the `env_variables` field
 
@@ -58,8 +67,12 @@
 
 6. Deploy your app
 
-   `gcloud app deploy`
+   ```
+   gcloud app deploy
+   ```
 
 7. See your app running
 
-   `gcloud app browse`
+   ```
+   gcloud app browse
+   ```
