@@ -14,11 +14,11 @@ Any string
 
 #### Example
 
-Ushaflow Core EE
+`Ushaflow Core EE`
 
 #### Default
 
-Ushaflow Core EE
+`Ushaflow Core EE`
 
 ---
 
