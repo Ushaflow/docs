@@ -1,13 +1,15 @@
-# Ushaflow Core EE: Installation
+# Ushaflow Core EE
 
-## Environments
+## Installation
+
+### Environments
 
 - [Cloud Run](#cloud-run)
 - [App Engine Flexible](#app-engine-flexible)
 - [Kubernetes](#kubernetes)
 - [Docker](#docker)
 
-## Cloud Run
+### Cloud Run
 
 1. Open [Cloud Run console](https://console.cloud.google.com/run) and select the Project with your Dialogflow Agent
 2. Press on "Create service"
@@ -35,7 +37,7 @@
 
    ![](./images/cloudrun/check.png)
 
-## App Engine Flexible
+### App Engine Flexible
 
 1. Make sure you have [Google Cloud SDK](https://cloud.google.com/sdk/docs) installed
 2. Create an App Engine application
@@ -77,7 +79,7 @@
    gcloud app browse
    ```
 
-## Kubernetes
+### Kubernetes
 
 1. Make sure you have [Google Cloud SDK](https://cloud.google.com/sdk/docs) installed
 2. Create a Service Account
@@ -89,11 +91,11 @@
 3. Grant `dialogflow.reader` and `dialogflow.client` roles to the Service Account
 
    ```
-   gcloud projects add-iam-policy-binding <your-project-id> --member serviceAccount:ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com --role roles/dialogflow.client
+   gcloud projects add-iam-policy-binding <your-project-id> --member serviceAccount:ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com --role roles/dialogflow.reader
    ```
 
    ```
-   gcloud projects add-iam-policy-binding <your-project-id> --member serviceAccount:ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com --role roles/dialogflow.reader
+   gcloud projects add-iam-policy-binding <your-project-id> --member serviceAccount:ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com --role roles/dialogflow.client
    ```
 
 4. Generate Service Account key
@@ -187,7 +189,7 @@
              servicePort: http
    ```
 
-## Docker
+### Docker
 
 1. Make sure you have [Google Cloud SDK](https://cloud.google.com/sdk/docs) installed
 2. Create a Service Account
@@ -199,11 +201,11 @@
 3. Grant `dialogflow.reader` and `dialogflow.client` roles to the Service Account
 
    ```
-   gcloud projects add-iam-policy-binding <your-project-id> --member serviceAccount:ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com --role roles/dialogflow.client
+   gcloud projects add-iam-policy-binding <your-project-id> --member serviceAccount:ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com --role roles/dialogflow.reader
    ```
 
    ```
-   gcloud projects add-iam-policy-binding <your-project-id> --member serviceAccount:ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com --role roles/dialogflow.reader
+   gcloud projects add-iam-policy-binding <your-project-id> --member serviceAccount:ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com --role roles/dialogflow.client
    ```
 
 4. Generate Service Account key

@@ -1,5 +1,5 @@
 # Ushaflow Docs
 
-## Products
+## Editions
 
 - [Core EE](core-ee)

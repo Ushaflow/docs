@@ -1,22 +1,19 @@
-# Ushaflow Core EE
+# Ushaflow Docs
+
+## Ushaflow Core EE
 
 Ushaflow Core EE is a self-hosted variant of Ushaflow Core product
 
-## Product
-
-- [Features]()
-- [Pricing]()
-
-## Setup
+### Setup
 
 - [Installation](./setup/installation.md)
 - [Configuration](./setup/configuration.md)
 
-## Manual
+### Manual
 
-- [API]()
+- [API](./manual/api.md)
 
-## Legal
+### Legal
 
-- [Terms and Conditions]()
-- [Privacy Policy]()
+- [Terms and Conditions](./legal/terms.md)
+- [Privacy Policy](./legal/privacy.md)
