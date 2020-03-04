@@ -122,7 +122,7 @@ disabled
 
 ---
 
-#### `REALTIME`
+### `REALTIME`
 
 Enable Realtime (WebSocket) API
 
@@ -140,7 +140,7 @@ Boolean, `true` or `false`
 
 ---
 
-#### `GOOGLE_APPLICATION_CREDENTIALS`
+### `GOOGLE_APPLICATION_CREDENTIALS`
 
 Path to Google Cloud Project Service Account
 
