@@ -125,7 +125,7 @@
 7. Create a `Deployment` contaning the container
 
    ```yaml
-   apiVersion: extensions/v1beta1
+   apiVersion: apps/v1
    kind: Deployment
    metadata:
      name: ushaflow-core-ee
@@ -174,7 +174,7 @@
 9. Expose the `Service` using `Ingress`
 
    ```yaml
-   apiVersion: extensions/v1beta1
+   apiVersion: networking.k8s.io/v1beta1
    kind: Ingress
    metadata:
      name: ushaflow-core-ee
