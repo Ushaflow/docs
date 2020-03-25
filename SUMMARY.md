@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Ushaflow Docs](README.md)
-* [Ushaflow Docs](core-ee/README.md)
+* [Ushaflow Core EE](core-ee/README.md)
   * [setup](core-ee/setup/README.md)
     * [Ushaflow Core EE](core-ee/setup/configuration.md)
     * [Ushaflow Core EE](core-ee/setup/installation.md)

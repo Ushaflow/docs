@@ -1,8 +1,8 @@
-# Ushaflow Docs
+---
+description: Ushaflow Core EE is a self-hosted variant of Ushaflow Core product
+---
 
-## Ushaflow Core EE
-
-Ushaflow Core EE is a self-hosted variant of Ushaflow Core product
+# Ushaflow Core EE
 
 ### Setup
 
