@@ -4,10 +4,10 @@
 
 ### Environments
 
-- [Cloud Run](#cloud-run)
-- [App Engine Flexible](#app-engine-flexible)
-- [Kubernetes](#kubernetes)
-- [Docker](#docker)
+* [Cloud Run](installation.md#cloud-run)
+* [App Engine Flexible](installation.md#app-engine-flexible)
+* [Kubernetes](installation.md#kubernetes)
+* [Docker](installation.md#docker)
 
 ### Cloud Run
 
@@ -15,44 +15,44 @@
 2. Press on "Create service"
 3. Enter following container image URL
 
-   ```
+   ```text
    gcr.io/ushaflow/core-ee
    ```
 
 4. Select the deployment platform and region
 5. Choose "Allow unauthenticated invocations" in the "Authentication" section
 
-   ![](./images/cloudrun/create.png)
+   ![](../../.gitbook/assets/create.png)
 
 6. Press on "Show optional revision settings"
-7. In the "Environment variables" section, add desired [configuration options](./configuration.md)
+7. In the "Environment variables" section, add desired [configuration options](configuration.md)
 
-   ![](./images/cloudrun/token.png)
+   ![](../../.gitbook/assets/token.png)
 
 8. Press on "Create"
 
-   ![](./images/cloudrun/overview.png)
+   ![](../../.gitbook/assets/overview.png)
 
 9. Visit the given URL to check everything is working
 
-   ![](./images/cloudrun/check.png)
+   ![](../../.gitbook/assets/check.png)
 
 ### App Engine Flexible
 
 1. Make sure you have [Google Cloud SDK](https://cloud.google.com/sdk/docs) installed
 2. Create an App Engine application
 
-   ```
+   ```text
    gcloud app create
    ```
 
 3. Make and enter a new directory for your App Engine application
 
-   ```
+   ```text
    mkdir core-ee && cd core-ee
    ```
 
-4. Create `app.yaml` and add desired [configuration options](./configuration.md) to the `env_variables` field
+4. Create `app.yaml` and add desired [configuration options](configuration.md) to the `env_variables` field
 
    ```yaml
    runtime: custom
@@ -63,19 +63,19 @@
 
 5. Create a `Dockerfile`
 
-   ```Dockerfile
+   ```text
    FROM gcr.io/ushaflow/core-ee
    ```
 
 6. Deploy your app
 
-   ```
+   ```text
    gcloud app deploy
    ```
 
 7. See your app running
 
-   ```
+   ```text
    gcloud app browse
    ```
 
@@ -84,33 +84,33 @@
 1. Make sure you have [Google Cloud SDK](https://cloud.google.com/sdk/docs) installed
 2. Create a Service Account
 
-   ```
+   ```text
    gcloud iam service-accounts create ushaflow-core-ee
    ```
 
 3. Grant `dialogflow.reader` and `dialogflow.client` roles to the Service Account
 
-   ```
+   ```text
    gcloud projects add-iam-policy-binding <your-project-id> --member serviceAccount:ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com --role roles/dialogflow.reader
    ```
 
-   ```
+   ```text
    gcloud projects add-iam-policy-binding <your-project-id> --member serviceAccount:ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com --role roles/dialogflow.client
    ```
 
 4. Generate Service Account key
 
-   ```
+   ```text
    gcloud iam service-accounts keys create service_account.json --iam-account ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com
    ```
 
 5. Using `kubectl` create a `Secret` ressource, containing the service account key
 
-   ```
+   ```text
    kubectl create secret generic ushaflow-core-ee --from-file=service_account.json
    ```
 
-6. Create a `ConfigMap` containing desired [configuration options](./configuration.md)
+6. Create a `ConfigMap` containing desired [configuration options](configuration.md)
 
    ```yaml
    apiVersion: v1
@@ -194,29 +194,29 @@
 1. Make sure you have [Google Cloud SDK](https://cloud.google.com/sdk/docs) installed
 2. Create a Service Account
 
-   ```
+   ```text
    gcloud iam service-accounts create ushaflow-core-ee
    ```
 
 3. Grant `dialogflow.reader` and `dialogflow.client` roles to the Service Account
 
-   ```
+   ```text
    gcloud projects add-iam-policy-binding <your-project-id> --member serviceAccount:ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com --role roles/dialogflow.reader
    ```
 
-   ```
+   ```text
    gcloud projects add-iam-policy-binding <your-project-id> --member serviceAccount:ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com --role roles/dialogflow.client
    ```
 
 4. Generate Service Account key
 
-   ```
+   ```text
    gcloud iam service-accounts keys create service_account.json --iam-account ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com
    ```
 
-5. Run the container with desired [configuration options](./configuration.md)
+5. Run the container with desired [configuration options](configuration.md)
 
-   ```
+   ```text
    docker run -d \
    -e "TOKEN=<your license key>" \
    -e "GOOGLE_APPLICATION_CREDENTIALS=/app/service_account.json" \
@@ -224,3 +224,4 @@
    -v "$(pwd)"/service_account.json:/app/service_account.json \
    gcr.io/ushaflow/core-ee
    ```
+

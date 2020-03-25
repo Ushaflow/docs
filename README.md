@@ -2,4 +2,5 @@
 
 ## Editions
 
-- [Core EE](core-ee)
+{% page-ref page="./" %}
+

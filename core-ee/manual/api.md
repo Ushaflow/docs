@@ -1,62 +1,62 @@
 # Ushaflow Core EE
 
-- [API](#api)
-  - [Response Codes](#response-codes)
-  - [Errors](#errors)
-    - [Example Error](#example-error)
-  - [Endpoints](#endpoints)
-    - [Base Endpoint](#base-endpoint)
-    - [Base Endpoint Variables](#base-endpoint-variables)
-    - [Base Endpoint Example](#base-endpoint-example)
-- [Requests](#requests)
-  - [Retrieving Agents](#retrieving-agents)
-    - [Request](#request)
-    - [Request Variables](#request-variables)
-    - [Response Body](#response-body)
-    - [Example Request](#example-request)
-    - [Example Response](#example-response)
-  - [Detecting Intents](#detecting-intents)
-    - [Request](#request-1)
-    - [Request Variables](#request-variables-1)
-    - [Request Body](#request-body)
-    - [Response Body](#response-body-1)
-    - [Example Request](#example-request-1)
-    - [Example Response](#example-response-1)
-- [Realtime API](#realtime-api)
-  - [Close Codes](#close-codes)
-  - [Errors](#errors-1)
-    - [Example Error](#example-error-1)
-  - [Endpoints](#endpoints)
-    - [Base Endpoint](#base-endpoint-1)
-    - [Base Endpoint Variables](#base-endpoint-variables-1)
-    - [Base Endpoint Example](#base-endpoint-example-1)
-  - [Requests](#requests-1)
-  - [Detecting Intents](#detecting-intents-1)
-    - [Request](#request-2)
-    - [Request Variables](#request-variables-2)
-    - [Request Body](#request-body-1)
-    - [Response Body](#response-body-2)
-    - [Example Request](#example-request-2)
-    - [Example Response](#example-response-2)
+* [API](api.md#api)
+  * [Response Codes](api.md#response-codes)
+  * [Errors](api.md#errors)
+    * [Example Error](api.md#example-error)
+  * [Endpoints](api.md#endpoints)
+    * [Base Endpoint](api.md#base-endpoint)
+    * [Base Endpoint Variables](api.md#base-endpoint-variables)
+    * [Base Endpoint Example](api.md#base-endpoint-example)
+* [Requests](api.md#requests)
+  * [Retrieving Agents](api.md#retrieving-agents)
+    * [Request](api.md#request)
+    * [Request Variables](api.md#request-variables)
+    * [Response Body](api.md#response-body)
+    * [Example Request](api.md#example-request)
+    * [Example Response](api.md#example-response)
+  * [Detecting Intents](api.md#detecting-intents)
+    * [Request](api.md#request-1)
+    * [Request Variables](api.md#request-variables-1)
+    * [Request Body](api.md#request-body)
+    * [Response Body](api.md#response-body-1)
+    * [Example Request](api.md#example-request-1)
+    * [Example Response](api.md#example-response-1)
+* [Realtime API](api.md#realtime-api)
+  * [Close Codes](api.md#close-codes)
+  * [Errors](api.md#errors-1)
+    * [Example Error](api.md#example-error-1)
+  * [Endpoints](api.md#endpoints)
+    * [Base Endpoint](api.md#base-endpoint-1)
+    * [Base Endpoint Variables](api.md#base-endpoint-variables-1)
+    * [Base Endpoint Example](api.md#base-endpoint-example-1)
+  * [Requests](api.md#requests-1)
+  * [Detecting Intents](api.md#detecting-intents-1)
+    * [Request](api.md#request-2)
+    * [Request Variables](api.md#request-variables-2)
+    * [Request Body](api.md#request-body-1)
+    * [Response Body](api.md#response-body-2)
+    * [Example Request](api.md#example-request-2)
+    * [Example Response](api.md#example-response-2)
 
 ## API
 
 ### Response Codes
 
-| HTTP-Code | Reason                                                                         |
-|-----------|--------------------------------------------------------------------------------|
-| 200       | Request was successful                                                         |
-| 400       | The request body or session ID is invalid and/or missing                       |
-| 403       | The deployment was blocked or the service account key is no longer valid       |
-| 404       | The deployment was not found                                                   |
-| 500       | Internal server error                                                          |
-| 503       | The service is unavailable                                                     |
+| HTTP-Code | Reason |
+| :--- | :--- |
+| 200 | Request was successful |
+| 400 | The request body or session ID is invalid and/or missing |
+| 403 | The deployment was blocked or the service account key is no longer valid |
+| 404 | The deployment was not found |
+| 500 | Internal server error |
+| 503 | The service is unavailable |
 
 ### Errors
 
 #### Example Error
 
-```json
+```javascript
 {"error": "Deployment was not found", "code": 404}
 ```
 
@@ -64,19 +64,19 @@
 
 #### Base Endpoint
 
-```
+```text
 https://<HOST>
 ```
 
 #### Base Endpoint Variables
 
-| Variable    | Description                |
-|-------------|----------------------------|
-| HOST        | Required, Host of the Core |
+| Variable | Description |
+| :--- | :--- |
+| HOST | Required, Host of the Core |
 
 #### Base Endpoint Example
 
-```
+```text
 https://dialogflow-web-v2.core.ushaflow.com
 ```
 
@@ -92,9 +92,9 @@ GET <BASE_ENDPOINT>
 
 #### Request Variables
 
-| Variable      | Description                    |
-|---------------|--------------------------------|
-| BASE_ENDPOINT | Required, Endpoint of the Core |
+| Variable | Description |
+| :--- | :--- |
+| BASE\_ENDPOINT | Required, Endpoint of the Core |
 
 #### Response Body
 
@@ -108,7 +108,7 @@ GET https://dialogflow-web-v2.core.ushaflow.com
 
 #### Example Response
 
-```json
+```javascript
 {
   "parent": "projects/dialogflow-web-v2",
   "displayName": "DialogflowWebV2",
@@ -136,8 +136,8 @@ POST <BASE_ENDPOINT>
 #### Request Variables
 
 | Variable | Description |
-|----------|-------------|
-| BASE_ENDPOINT | Required, Endpoint of the Core |
+| :--- | :--- |
+| BASE\_ENDPOINT | Required, Endpoint of the Core |
 
 #### Request Body
 
@@ -168,7 +168,7 @@ Content-Type: application/json
 
 #### Example Response
 
-```json
+```javascript
 {
   "responseId": "85c3d6bd-6f8c-4000-a1ec-fdd6f636b2e8",
   "queryResult": {
@@ -202,19 +202,19 @@ Realtime API implements [Secure WebSocket](https://en.wikipedia.org/wiki/WebSock
 
 ### Close Codes
 
-| Code | Reason                                                                     |
-|------|----------------------------------------------------------------------------|
-| 4400 | The request body or session ID is invalid and/or missing                   |
-| 4403 | The deployment was blocked or the service account key is no longer valid   |
-| 4404 | The deployment was not found                                               |
-| 4500 | Internal server error                                                      |
-| 1006 | Realtime API unavailable                                                   |
+| Code | Reason |
+| :--- | :--- |
+| 4400 | The request body or session ID is invalid and/or missing |
+| 4403 | The deployment was blocked or the service account key is no longer valid |
+| 4404 | The deployment was not found |
+| 4500 | Internal server error |
+| 1006 | Realtime API unavailable |
 
 ### Errors
 
 #### Example Error
 
-```
+```text
 4404 'Deployment was not found'
 ```
 
@@ -222,19 +222,19 @@ Realtime API implements [Secure WebSocket](https://en.wikipedia.org/wiki/WebSock
 
 #### Base Endpoint
 
-```
+```text
 wss://<HOST>
 ```
 
 #### Base Endpoint Variables
 
-| Variable    | Description                |
-|-------------|----------------------------|
-| HOST        | Required, Host of the Core |
+| Variable | Description |
+| :--- | :--- |
+| HOST | Required, Host of the Core |
 
 #### Base Endpoint Example
 
-```
+```text
 wss://dialogflow-web-v2.core.ushaflow.com
 ```
 
@@ -251,8 +251,8 @@ POST <BASE_ENDPOINT>
 #### Request Variables
 
 | Variable | Description |
-|----------|-------------|
-| BASE_ENDPOINT | Required, Endpoint of the Core |
+| :--- | :--- |
+| BASE\_ENDPOINT | Required, Endpoint of the Core |
 
 #### Request Body
 
@@ -268,7 +268,7 @@ POST <BASE_ENDPOINT>
 
 **Note**: `session` field is converted into `projects/<Project ID>/agent/sessions/<Session ID>`
 
-```js
+```javascript
 const WebSocket = require('ws')
 const ws = new WebSocket('ws://app-of-the-day-9a9f6.core.ushaflow.com')
 
@@ -295,7 +295,7 @@ ws.on('close', (code, error) => {
 
 #### Example Response
 
-```json
+```javascript
 {
   "responseId": "85c3d6bd-6f8c-4000-a1ec-fdd6f636b2e8",
   "queryResult": {
@@ -322,3 +322,4 @@ ws.on('close', (code, error) => {
   }
 }
 ```
+
