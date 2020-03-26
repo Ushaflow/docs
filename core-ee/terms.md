@@ -1,12 +1,15 @@
+---
+description: 'You agree to the terms below, when downloading our Software'
+---
+
 # Terms
 
 * All rights reserved
-* No reverse-engineering, modification
-* Limited warranty
-* Licensed per project
-* No unlicensed use
-* No redistribution, resale
-* No refunds, however license keys can be exchanged up to 2 times, within 30 days after the purchase initiated
-* No liablity
-* Any changes are made without notice
+* Changes to the software are made without notice
+* You are responsible for ensuring your device meets minimal requirements
+* You are eligible for 1 year worth of limited warranty and support
+* License key - non exclusive, transferrable digital token is required to activate the software
+* Maximum one license key per agent
+* License key is non-refundable, however we can exchange it within 14 days after the purchase
+* No: reverse-engineering, modification, redistribution, resale, unlicensed \(pirated\) use, liablity
 

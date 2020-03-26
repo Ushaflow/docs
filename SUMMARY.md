@@ -1,6 +1,13 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [Introduction](README.md)
+
+## Core
+
+* [Overview](core/overview.md)
+* [API](core/api/README.md)
+  * [HTTP API](core/api/http.md)
+  * [WebSocket API \(Realtime\)](core/api/websocket.md)
 
 ## Core EE
 
