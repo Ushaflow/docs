@@ -5,7 +5,7 @@ description: 'You agree to the terms below, when downloading our Software'
 # Terms
 
 * All rights reserved
-* Changes to the software are made without notice
+* Changes to the software and terms are made without notice
 * You are responsible for ensuring your device meets minimal requirements
 * You are eligible for 1 year worth of limited warranty and support
 * License key - non exclusive, transferrable digital token is required to activate the software
