@@ -21,5 +21,7 @@
 * [API](core-ee/api.md)
 * [Terms](core-ee/terms.md)
 * [Privacy](core-ee/privacy.md)
+* [Homepage](https://ushaflow.com)
+* [GitHub](https://github.com/Ushaflow)
 * [Contact](https://ushaflow.com/#contact)
 

@@ -1,3 +1,7 @@
+---
+description: You agree to the privacy policy below when downloading our software
+---
+
 # Privacy
 
 Your privacy is important to us and it is our policy to respect your privacy regarding any information we may collect from you across our services
