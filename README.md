@@ -1,4 +1,4 @@
-# Introduction
+# Welcome
 
 ![](.gitbook/assets/docs.png)
 
