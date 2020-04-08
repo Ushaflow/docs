@@ -1,6 +1,6 @@
 # Overview
 
-###  Prebuilt cores
+### Providers
 
 | Name | Developer | Status | Homepage | Cloud based? |
 | :--- | :--- | :--- | :--- | :--- |

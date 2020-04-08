@@ -99,5 +99,18 @@ description: Configuration is done using Environment Variables
       <td style="text-align:left">-</td>
       <td style="text-align:left">No</td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>SSML</code>
+      </td>
+      <td style="text-align:left">Adds SSML Support</td>
+      <td style="text-align:left">
+        <p>Boolean: <code>true</code> or <code>false</code>
+        </p>
+        <p></p>
+        <p><b>Note</b>: first enable Cloud Text To Speech API</p>
+      </td>
+      <td style="text-align:left">false</td>
+      <td style="text-align:left">No</td>
+    </tr>
   </tbody>
 </table>
