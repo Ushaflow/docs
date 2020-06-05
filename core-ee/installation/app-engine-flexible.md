@@ -16,7 +16,7 @@ Make and enter a new directory for your App Engine application
 mkdir core-ee && cd core-ee
 ```
 
-Create `app.yaml` and add desired [configuration options](../configuration.md) to the `env_variables` field
+Create `app.yaml` and add desired [configuration options](../configuration/) to the `env_variables` field
 
 ```yaml
 runtime: custom

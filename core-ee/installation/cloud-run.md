@@ -19,7 +19,7 @@ Choose "Allow unauthenticated invocations" in the "Authentication" section
 
 Press on "Show optional revision settings"
 
-In the "Environment variables" section, add desired [configuration options](../configuration.md)
+In the "Environment variables" section, add desired [configuration options](../configuration/)
 
 ![](../../.gitbook/assets/token.png)
 

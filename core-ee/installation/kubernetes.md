@@ -32,7 +32,7 @@ Using `kubectl` create a `Secret` ressource, containing the service account key
 kubectl create secret generic ushaflow-core-ee --from-file=service_account.json
 ```
 
-Create a `ConfigMap` containing desired [configuration options](../configuration.md)
+Create a `ConfigMap` containing desired [configuration options](../configuration/)
 
 ```yaml
 apiVersion: v1

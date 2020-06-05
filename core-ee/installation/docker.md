@@ -26,7 +26,7 @@ Generate Service Account key
 gcloud iam service-accounts keys create service_account.json --iam-account ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com
 ```
 
-Run the container with desired [configuration options](../configuration.md)
+Run the container with desired [configuration options](../configuration/)
 
 ```text
 docker run -d \
