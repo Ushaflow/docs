@@ -81,48 +81,6 @@ description: Configuration is done using Environment Variables
       <td style="text-align:left">No</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>SSML_CONFIG</code>
-      </td>
-      <td style="text-align:left">Text-to-Speech configuration</td>
-      <td style="text-align:left">
-        <p>Reference: <a href="https://cloud.google.com/text-to-speech/docs/reference/rest/v1/text/synthesize#audioconfig">https://cloud.google.com/text-to-speech/docs/reference/rest/v1/text/synthesize#audioconfig</a>
-        </p>
-        <p>
-          <br />Further reading: <a href="ssml.md">SSML</a>
-        </p>
-      </td>
-      <td style="text-align:left">-</td>
-      <td style="text-align:left">No</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>SSML_VOICE</code>
-      </td>
-      <td style="text-align:left">Text-to-Speech Voice name</td>
-      <td style="text-align:left">
-        <p>Reference: <a href="https://cloud.google.com/text-to-speech/docs/reference/rest/v1/text/synthesize#voiceselectionparams">https://cloud.google.com/text-to-speech/docs/reference/rest/v1/text/synthesize#voiceselectionparams</a>
-        </p>
-        <p>
-          <br />Further reading: <a href="ssml.md">SSML</a>
-        </p>
-      </td>
-      <td style="text-align:left">-</td>
-      <td style="text-align:left">No</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>SSML_VOICE_GENDER</code>
-      </td>
-      <td style="text-align:left">Text-to-Speech Voice gender</td>
-      <td style="text-align:left">
-        <p>Reference: <a href="https://cloud.google.com/text-to-speech/docs/reference/rest/v1/SsmlVoiceGender">https://cloud.google.com/text-to-speech/docs/reference/rest/v1/SsmlVoiceGender</a>
-        </p>
-        <p>
-          <br />Further reading: <a href="ssml.md">SSML</a>
-        </p>
-      </td>
-      <td style="text-align:left">-</td>
-      <td style="text-align:left">No</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><code>PUBSUB_TOPIC</code>
       </td>
       <td style="text-align:left">Pub/Sub topic to publish messages to</td>

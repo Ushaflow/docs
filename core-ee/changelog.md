@@ -2,6 +2,19 @@
 
 ## 2020
 
+### 29 July
+
+* Automatic SSML config via Dialogflow Settings
+
+### 20 July
+
+* Added outputAudioConfig to responses
+* Changed SSML behaviour when there are multiple SSMLs
+
+### 8 June
+
+* Added "session" attribute to Pub/Sub
+
 ### 5 June
 
 * Updated documentation for configuration, features, added changelog and references to third-party features
