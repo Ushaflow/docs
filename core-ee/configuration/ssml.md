@@ -9,8 +9,7 @@ Core EE's Cloud Text-To-Speech feature allows you to produce audio from text and
 
 ### Usage
 
-Enable and configure "Automatic Text-To-Speech" in your Dialogflow Settings
-
+Enable and configure "Automatic Text-To-Speech" in your Dialogflow Settings  
 Core EE will resolve the settings automatically and use them to generate the audio response
 
 **Note**: the audio is encoded in base64
