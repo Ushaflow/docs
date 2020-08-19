@@ -1,8 +1,10 @@
 # Docker
 
 {% hint style="info" %}
-Make sure you have [Google Cloud SDK](https://cloud.google.com/sdk/docs) installed
+This guide assumes you have some experience with Docker already, if not feel free to begin with [Cloud Run](cloud-run.md) or the [App Engine Flexible](app-engine-flexible.md) guides
 {% endhint %}
+
+Make sure you have [Google Cloud SDK](https://cloud.google.com/sdk/docs) installed 
 
 Create a Service Account
 
