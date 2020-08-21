@@ -1,10 +1,12 @@
 # Docker
 
 {% hint style="info" %}
-This guide assumes you have some experience with Docker already, if not feel free to begin with [Cloud Run](cloud-run.md) or the [App Engine Flexible](app-engine-flexible.md) guides
+This guide assumes you have some experience with Docker already, if not feel free to begin with [Cloud Run](cloud-run.md), [App Engine Flexible](app-engine-flexible.md) or [Standalone](on-premises.md) guide
 {% endhint %}
 
-Make sure you have [Google Cloud SDK](https://cloud.google.com/sdk/docs) installed 
+{% hint style="info" %}
+Make sure you have [Google Cloud SDK](https://cloud.google.com/sdk/docs) installed
+{% endhint %}
 
 Create a Service Account
 
@@ -28,7 +30,15 @@ Generate Service Account key
 gcloud iam service-accounts keys create service_account.json --iam-account ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com
 ```
 
-Run the container with desired [configuration options](../configuration/)
+Run the container with desired
+
+{% hint style="info" %}
+Make sure you have [Google Cloud SDK](https://cloud.google.com/sdk/docs) installed
+{% endhint %}
+
+
+
+
 
 ```text
 docker run -d \

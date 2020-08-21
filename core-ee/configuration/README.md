@@ -1,5 +1,5 @@
 ---
-description: Configuration is done using Environment Variables
+description: Configuration is done using Environment variables
 ---
 
 # Configuration

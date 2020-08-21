@@ -1,6 +1,8 @@
 # App Engine Flexible
 
-Make sure you have [Google Cloud SDK](https://cloud.google.com/sdk/docs) installed 
+{% hint style="info" %}
+Make sure you have [Google Cloud SDK](https://cloud.google.com/sdk/docs) installed
+{% endhint %}
 
 Create an App Engine application
 

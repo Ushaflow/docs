@@ -2,6 +2,11 @@
 
 ## 2020
 
+### 20 August
+
+* Added on-prem as supported runtime
+* Shrinked Docker \(virtual\) image size down to 30MB
+
 ### 29 July
 
 * Automatic SSML config via Dialogflow Settings
