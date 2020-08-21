@@ -12,5 +12,5 @@ description: Choose a environment
 
 {% page-ref page="docker.md" %}
 
-{% page-ref page="on-premises.md" %}
+{% page-ref page="standalone.md" %}
 

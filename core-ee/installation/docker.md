@@ -1,7 +1,7 @@
 # Docker
 
 {% hint style="info" %}
-This guide assumes you have some experience with Docker already, if not feel free to begin with [Cloud Run](cloud-run.md), [App Engine Flexible](app-engine-flexible.md) or [Standalone](on-premises.md) guide
+This guide assumes you have some experience with Docker already, if not feel free to begin with [Cloud Run](cloud-run.md), [App Engine Flexible](app-engine-flexible.md) or [Standalone](standalone.md) guide
 {% endhint %}
 
 {% hint style="info" %}

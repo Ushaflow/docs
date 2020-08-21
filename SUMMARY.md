@@ -17,7 +17,7 @@
   * [App Engine Flexible](core-ee/installation/app-engine-flexible.md)
   * [Kubernetes](core-ee/installation/kubernetes.md)
   * [Docker](core-ee/installation/docker.md)
-  * [Standalone](core-ee/installation/on-premises.md)
+  * [Standalone](core-ee/installation/standalone.md)
 * [Configuration](core-ee/configuration/README.md)
   * [SSML](core-ee/configuration/ssml.md)
   * [Pub/Sub](core-ee/configuration/pub-sub.md)
