@@ -32,6 +32,12 @@ Download compressed \(.gz\) binary for your operating system from [our Cloud Sto
 * [MacOS \(latest\)](https://storage.googleapis.com/ushaflow-core-ee-bin/ushaflow-core-ee-macos.gz)
 * [Windows \(latest\)](https://storage.googleapis.com/ushaflow-core-ee-bin/ushaflow-core-ee-win.exe.gz)
 
+System requirements
+
+* 64-bit Linux, Mac or Windows \(amd64\)
+* 100 MB of Storage
+* 256 MB of RAM
+
 {% hint style="info" %}
 The bucket in question is using object versioning feature to retain older versions. You can access them using [gstuil tool](https://cloud.google.com/storage/docs/gsutil)
 
