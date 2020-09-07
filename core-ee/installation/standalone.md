@@ -62,10 +62,9 @@ Make it executable
 chmod +x ./ushaflow-core-ee-linux
 ```
 
-Set desired [configuration options](../configuration/) in your environment or in `.env` file next to your executable
+Set desired [configuration options](../configuration/) in `.env` file next to the executable or in a file specified in `ENV` 
 
 ```text
-# .env
 SERVER=Ushaflow Core EE
 PORT=8090
 REALTIME=true

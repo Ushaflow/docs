@@ -93,6 +93,14 @@ description: Configuration is done using Environment variables
       <td style="text-align:left">-</td>
       <td style="text-align:left">No</td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>ENV</code>
+      </td>
+      <td style="text-align:left">Path to env file</td>
+      <td style="text-align:left">A path</td>
+      <td style="text-align:left">-</td>
+      <td style="text-align:left">No</td>
+    </tr>
   </tbody>
 </table>
 
