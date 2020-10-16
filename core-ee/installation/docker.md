@@ -36,16 +36,12 @@ Run the container with desired
 Make sure you have [Google Cloud SDK](https://cloud.google.com/sdk/docs) installed
 {% endhint %}
 
-
-
-
-
 ```text
 docker run -d \
 -e "TOKEN=<your license key>" \
 -e "GOOGLE_APPLICATION_CREDENTIALS=/app/service_account.json" \
 -p 8090:8090 \
 -v "$(pwd)"/service_account.json:/app/service_account.json \
-gcr.io/ushaflow/core-ee
+ghcr.io/ushaflow/core-ee
 ```
 

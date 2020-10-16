@@ -66,7 +66,7 @@ spec:
     spec:
       containers:
       - name: ushaflow-core-ee
-        image: gcr.io/ushaflow/core-ee
+        image: ghcr.io/ushaflow/core-ee
         envFrom:
         - configMapRef:
             name: ushaflow-core-ee

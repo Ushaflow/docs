@@ -9,7 +9,7 @@ Press on "Create service"
 Enter following container image URL
 
 ```text
-gcr.io/ushaflow/core-ee
+ghcr.io/ushaflow/core-ee
 ```
 
 Select the deployment platform and region  

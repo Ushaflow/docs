@@ -28,7 +28,7 @@ env_variables:
 Create a `Dockerfile`
 
 ```text
-FROM gcr.io/ushaflow/core-ee
+FROM ghcr.io/ushaflow/core-ee
 ```
 
 Deploy your app
