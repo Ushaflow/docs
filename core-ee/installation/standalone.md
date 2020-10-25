@@ -26,11 +26,15 @@ Generate Service Account key
 gcloud iam service-accounts keys create service_account.json --iam-account ushaflow-core-ee@<your-project-id>.iam.gserviceaccount.com
 ```
 
-Download compressed \(.gz\) binary for your operating system from [our Cloud Storage Bucket](https://console.cloud.google.com/storage/browser/ushaflow-core-ee-bin)
+Download compressed \(.gz\) binary for your operating system from [our S3 bucket](https://core-ee-bin.s3.eu-central-1.amazonaws.com)
 
-* [Linux \(latest\)](https://storage.googleapis.com/ushaflow-core-ee-bin/ushaflow-core-ee-linux.gz)
-* [MacOS \(latest\)](https://storage.googleapis.com/ushaflow-core-ee-bin/ushaflow-core-ee-macos.gz)
-* [Windows \(latest\)](https://storage.googleapis.com/ushaflow-core-ee-bin/ushaflow-core-ee-win.exe.gz)
+{% hint style="info" %}
+The bucket is using object versioning feature to retain older versions. You can access them using [AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-object-versions.html)
+{% endhint %}
+
+* [Linux \(latest\)](https://core-ee-bin.s3.eu-central-1.amazonaws.com/ushaflow-core-ee-linux.gz)
+* [MacOS \(latest\)](https://core-ee-bin.s3.eu-central-1.amazonaws.com/ushaflow-core-ee-macos.gz)
+* [Windows \(latest\)](https://core-ee-bin.s3.eu-central-1.amazonaws.com/ushaflow-core-ee-win.exe.gz)
 
 System requirements
 
@@ -38,16 +42,8 @@ System requirements
 * 100 MB of Storage
 * 256 MB of RAM
 
-{% hint style="info" %}
-The bucket in question is using object versioning feature to retain older versions. You can access them using [gstuil tool](https://cloud.google.com/storage/docs/gsutil)
-
 ```text
-gsutil ls -a gs://ushaflow-core-ee-bin
-```
-{% endhint %}
-
-```text
-wget https://storage.googleapis.com/ushaflow-core-ee-bin/ushaflow-core-ee-linux.gz
+wget https://core-ee-bin.s3.eu-central-1.amazonaws.com/ushaflow-core-ee-linux.gz
 ```
 
 Uncompress the binary using `gzip` or 7-Zip on Windows
