@@ -4,15 +4,15 @@ Open [Cloud Run console](https://console.cloud.google.com/run) and select the Pr
 
 Press on "Create service"
 
-![](../../.gitbook/assets/screenshot-2020-03-25-at-15.03.33.png)
+![](<../../.gitbook/assets/Screenshot 2020-03-25 at 15.03.33.png>)
 
 Enter following container image URL
 
-```text
+```
 ghcr.io/ushaflow/core-ee
 ```
 
-Select the deployment platform and region  
+Select the deployment platform and region\
 Choose "Allow unauthenticated invocations" in the "Authentication" section
 
 ![](../../.gitbook/assets/create.png)
@@ -30,4 +30,3 @@ Press on "Create"
 Visit the given URL to check everything works
 
 ![](../../.gitbook/assets/check.png)
-
